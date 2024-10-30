@@ -11,7 +11,3 @@ buttonClick.addEventListener('click', function(){
     }
     
 })  
-
-
-
-

@@ -41,3 +41,9 @@ body{
     margin-left: 25px;
     display: none;
 }
+
+.paragraph.open{
+    width: 550px;
+    margin-left: 25px;
+    display: block;
+}
