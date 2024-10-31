@@ -1,15 +1,9 @@
-let buttonClick = document.getElementById(`button`);
-let paraclick = document.getElementById(`para`);
+const buttonClick = document.querySelectorAll('button');
+const paraclick = document.querySelectorAll('.paragraph');
 
 
-buttonClick.addEventListener('click', function(){
-    if(paraclick.classList.contains(`open`)){
-        //paraclick.style.display = 'none';
-        paraclick.classList.remove(`open`);
-    }
-    else{
-        //paraclick.style.display = 'block';
-        paraclick.classList.add(`open`);
-    }
-    
-})  
+buttonClick.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        paraclick[index].classList.toggle('open');
+    });
+});
